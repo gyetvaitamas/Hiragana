@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/gyetvaitamas/hiragana/screenshot.png"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/gyetvaitamas/Hiragana/master/screenshot.png"></p>
 
 # Hiragana
  A simple clean and elegant hiragana practice website written in JS and CSS.
