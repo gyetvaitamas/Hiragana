@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: 'Old Standard TT', serif;
+    font-size: 60px;
+    background-color: #121212;
+    color: #e5e5e5;
+}
+
+a, a:link, a:visited {
+    color: #3D3D3D;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #BFBFBF;
+    text-decoration: underline;
+}
+
+a.word:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.page {
+    text-align: center;
+    min-width: 200px;
+    max-width: 100%;
+    margin: 60px auto 0 auto;
+    vertical-align: middle;
+}
+
+input {
+    font-family: 'Old Standard TT', serif;
+    font-weight: bold;
+    font-size: 60px;
+    width: 200px;
+    border: none;
+    background-color: #BFBFBF;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#hiraganaList {
+    font-size: 30px;
+    text-align: center;
+    margin: 150px auto 0 auto;
+}
+
+#currentHiragana {
+    font-size: 4em;
+}
+
+#currentHiraganaPrinted {
+    font-size: 1em;
+    color: #303030;
+}
+
+#winPoint, #losePoint{
+    font-family: 'Dosis', sans-serif;
+    text-align: left;
+    font-size: 24px;
+}
+
+#warn{
+    color: #c60005;
+}
+
+#infoBox{
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.fixed{
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 300px;
+}
+
+footer {
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: bottom;
+    margin-top: 20px;
+}
