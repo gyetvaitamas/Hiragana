@@ -1,36 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
     <head>
-        <meta name="author" content="Tamás Gyetvai">
-        <meta name="keywords" content="hiragana,practice,blind typing,project"/>
-        <meta name="description" content="A simple clean and elegant hiragana practice website written in JS and CSS."/>
-        <meta name="robots" content="index,follow"/>
-        <meta name="og:title" content="Hiragana"/>
-        <meta name="og:type" content="website"/>
-        <meta name="og:site_name" content="Hiragana"/>
-        <meta name="og:description" content="A simple clean and elegant hiragana practice website written in JS and CSS."/>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel='icon' type='image/x-icon' href="icon.ico">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <script src="core.js"></script>
-        <title>Hiragana</title>
+        <meta name="author" content="Tamás Gyetvai">
+        <meta name="keywords" content="hiragana,practice,blind typing"/>
+        <meta name="description" content="A simple clean and elegant hiragana practice website."/>
+        <meta name="robots" content="index,follow"/>
+        <meta property="og:title" content="ひらがな — Hiragana practice"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://github.com/gyetvaitamas/hiragana">
+        <meta property="og:description" content="A simple clean and elegant hiragana practice website."/>
+        <link rel="icon" type="image/x-icon" href="icon.ico">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/dark.css" id="theme">
+        <title>ひらがな — Hiragana practice</title>
     </head>
-    <body id="body" onload="start()" onclick="bodyClick()">
-        <div class="page">
+
+    <body id="body" onload="start()" onclick="alwaysFocus()">
+
+        <div class="practiceArea">
             <div id="currentHiragana"></div>
-            <div id="warn"></div>
-            <input id="input" type="text" title="input-field" onkeyup="eventHandler(event)">
-            <div id="currentHiraganaPrinted"></div>
+            <input id="input" class="defaultIndicator" type="text" title="Type here" onkeyup="eventHandler(event)">
+            <div id="currentHiraganaWord"></div>
         </div>
-        <div class="fixed">
-            <div id="winPoint"></div>
-            <div id="losePoint"></div>
-            <div id="infoBox">
+
+        <div class="leftSide">
+
+            <div id="correctRatio"></div>
+            <div id="correctAnswers"></div>
+            <div id="wrongAnswers"></div>
+            
+            <div class="description">
                 Change theme to <a href="#" id="changeTheme" onclick="changeTheme()">Light</a><br>
-                <a href="hiragana.html">Hiragana table</a>
+                <a href="https://en.wikipedia.org/wiki/Hiragana" target="_blank">About Hiragana</a>
                 <footer>Created by<br><a href="https://github.com/gyetvaitamas/hiragana" target="_blank">Tamás Gyetvai</a></footer>
             </div>
         </div>
+
+        <script src="js/core.js"></script>
+
     </body>
+
 </html>

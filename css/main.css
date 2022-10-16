@@ -1,3 +1,5 @@
+/* Main styles */
+
 @import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 
@@ -5,29 +7,28 @@
     outline: none;
 }
 
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
 body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
     font-family: 'Old Standard TT', serif;
     font-size: 60px;
-    background-color: #121212;
-    color: #e5e5e5;
 }
 
 a, a:link, a:visited {
-    color: #3D3D3D;
     text-decoration: none;
 }
 
 a:hover {
-    color: #BFBFBF;
     text-decoration: underline;
 }
 
-a.word:hover {
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.page {
+.practiceArea {
     text-align: center;
     min-width: 200px;
     max-width: 100%;
@@ -38,14 +39,13 @@ a.word:hover {
 input {
     font-family: 'Old Standard TT', serif;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 6rem;
     width: 200px;
     border: none;
-    background-color: #BFBFBF;
     text-align: center;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
 }
 
 #hiraganaList {
@@ -55,42 +55,49 @@ input {
 }
 
 #currentHiragana {
-    font-size: 4em;
+    font-size: 16rem;
 }
 
-#currentHiraganaPrinted {
-    font-size: 1em;
-    color: #303030;
+#currentHiraganaWord {
+    font-size: 3rem;
+    margin-top: 2rem;
 }
 
-#winPoint, #losePoint{
+.wrongIndicator {
+    background-color: transparent;
+    box-shadow: #b60006 0px 0px 40px -15px inset, #b60006 0px 0px 40px -15px inset, #b60006 0px 0px 15px;
+}
+
+#correctAnswers, #wrongAnswers, #correctRatio {
     font-family: 'Dosis', sans-serif;
     text-align: left;
-    font-size: 24px;
+    font-size: 2rem;
 }
 
-#warn{
-    color: #c60005;
-}
-
-#infoBox{
+.description {
     font-family: 'Dosis', sans-serif;
-    font-size: 18px;
+    font-size: 1rem;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
-.fixed{
+.leftSide {
     position: fixed;
     bottom: 30px;
     left: 30px;
-    width: 300px;
+    width: 10rem;
 }
 
 footer {
     font-family: 'Dosis', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: left;
     vertical-align: bottom;
-    margin-top: 20px;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #correctAnswers, #wrongAnswers, #correctRatio {
+        font-size: 1rem;
+    }
 }

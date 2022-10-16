@@ -1,0 +1,26 @@
+/* Light theme */
+
+body {
+    background-color: #f0f0f0;
+    color: #1b1b1b;
+}
+
+a, a:link, a:visited {
+    color: #1b1b1b;
+}
+
+a:hover {
+    color: #000000;
+}
+
+#currentHiraganaWord {
+    color: #dddddd;
+}
+
+input {
+    color: #1b1b1b;
+}
+
+.defaultIndicator {
+    background-color: #f0f0f0;
+}
